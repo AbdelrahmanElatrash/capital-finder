@@ -6,6 +6,7 @@ using python
 
 ## deployed URL
 [link](https://capital-finder-ecru-eta.vercel.app/api/capital_finder)
+[link](https://capital-finder-git-serverless-abdelrahmanelatrash.vercel.app/api/capital_finder)
 
 ## END POINT 
 go to url https://capital-finder-ecru-eta.vercel.app/api/capital_finder

@@ -57,7 +57,7 @@ def get_capital(country_name):
     
     query_params = {"name": country_name}  #to dict
     # Encode the query parameters
-    query_string = urlencode(query_params) # name=country_name
+    query_string = urlencode(query_params) # name=country_name to str
     print(query_string)
     #  GET request to the REST Countries API
     response = requests.get(API_URL + "name/{}?{}".format(country_name, query_string))
@@ -73,12 +73,11 @@ def get_capital(country_name):
 
 
 def get_country(capital_name):
-    # query parameters
+
     query_params = {"capital": capital_name}
 
     query_string = urlencode(query_params)
 
-    # Make a GET request to the REST Countries API
     response = requests.get(API_URL + "capital/{}?{}".format(capital_name, query_string))
 
 
